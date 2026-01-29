@@ -1,0 +1,638 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Social Cali of San Jose — AIO & Local Authority SOP</title>
+  <meta name="description" content="Enterprise SOP for building durable AI Search, AIO, GEO, AEO, and Local SEO authority for Social Cali of San Jose using a controlled, scalable publishing system." />
+  <style>
+    :root{
+      --bg:#0b0f14;
+      --panel:#0f1621;
+      --muted:#9bb0c7;
+      --text:#e7eef7;
+      --accent:#5ee1a2;
+      --accent2:#62b6ff;
+      --warn:#ffcf5a;
+      --danger:#ff6b6b;
+      --border:rgba(255,255,255,.08);
+      --shadow:0 10px 30px rgba(0,0,0,.35);
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      --sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      --radius:14px;
+      --radius2:18px;
+      --lh:1.55;
+    }
+    html,body{height:100%}
+    body{
+      margin:0;
+      background:radial-gradient(900px 500px at 10% 10%, rgba(98,182,255,.12), transparent 60%),
+                 radial-gradient(800px 500px at 90% 20%, rgba(94,225,162,.10), transparent 55%),
+                 var(--bg);
+      color:var(--text);
+      font-family:var(--sans);
+      line-height:var(--lh);
+    }
+    a{color:inherit}
+    .wrap{max-width:1120px;margin:0 auto;padding:28px 18px 46px}
+    .topbar{
+      display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;
+      border:1px solid var(--border);
+      background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+      border-radius:var(--radius2);
+      padding:14px 16px;
+      box-shadow:var(--shadow);
+    }
+    .brand{display:flex;gap:12px;align-items:center}
+    .mark{
+      width:40px;height:40px;border-radius:12px;
+      border:1px solid var(--border);
+      background:
+        linear-gradient(135deg, rgba(98,182,255,.25), rgba(94,225,162,.18)),
+        radial-gradient(14px 14px at 70% 30%, rgba(255,255,255,.25), transparent 70%),
+        rgba(255,255,255,.02);
+      display:grid;place-items:center;
+      font-family:var(--mono);
+      color:var(--accent);
+      letter-spacing:.5px;
+      user-select:none;
+    }
+    .brand h1{margin:0;font-size:16px;letter-spacing:.2px}
+    .brand p{margin:2px 0 0;color:var(--muted);font-size:12.5px}
+    .meta{
+      display:flex;gap:10px;flex-wrap:wrap;align-items:center;justify-content:flex-end;
+      color:var(--muted);font-size:12.5px
+    }
+    .pill{
+      border:1px solid var(--border);
+      background:rgba(255,255,255,.02);
+      border-radius:999px;
+      padding:7px 10px;
+      display:flex;gap:8px;align-items:center
+    }
+    .dot{width:8px;height:8px;border-radius:99px;background:var(--accent)}
+    .grid{
+      display:grid;
+      grid-template-columns: 320px 1fr;
+      gap:18px;
+      margin-top:18px;
+    }
+    @media (max-width: 980px){
+      .grid{grid-template-columns:1fr}
+    }
+    .card{
+      border:1px solid var(--border);
+      background:linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.015));
+      border-radius:var(--radius2);
+      box-shadow:var(--shadow);
+      overflow:hidden;
+    }
+    .card .hd{
+      padding:14px 16px;
+      border-bottom:1px solid var(--border);
+      display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap
+    }
+    .card .hd h2{
+      margin:0;
+      font-size:13px;
+      text-transform:uppercase;
+      letter-spacing:.14em;
+      color:rgba(231,238,247,.85);
+    }
+    .card .bd{padding:16px}
+    .toc a{
+      text-decoration:none;
+      display:block;
+      padding:10px 10px;
+      border-radius:12px;
+      border:1px solid transparent;
+      color:rgba(231,238,247,.92);
+    }
+    .toc a:hover{
+      border-color:var(--border);
+      background:rgba(255,255,255,.02);
+    }
+    .toc .group{margin:10px 0 0}
+    .toc .label{
+      color:var(--muted);
+      font-size:12px;
+      text-transform:uppercase;
+      letter-spacing:.12em;
+      margin:14px 10px 8px;
+    }
+    .kbd{
+      font-family:var(--mono);
+      font-size:12px;
+      color:rgba(231,238,247,.86);
+      background:rgba(255,255,255,.03);
+      border:1px solid var(--border);
+      padding:2px 6px;
+      border-radius:7px;
+    }
+    .content h2{
+      margin:0 0 10px;
+      font-size:20px;
+      letter-spacing:.2px;
+    }
+    .content h3{
+      margin:18px 0 8px;
+      font-size:15px;
+      letter-spacing:.2px;
+      color:rgba(231,238,247,.95);
+    }
+    .content p{margin:0 0 12px;color:rgba(231,238,247,.92)}
+    .content ul{margin:8px 0 14px 18px;padding:0}
+    .content li{margin:6px 0;color:rgba(231,238,247,.90)}
+    .callouts{
+      display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:10px
+    }
+    @media (max-width: 980px){.callouts{grid-template-columns:1fr}}
+    .callout{
+      border:1px solid var(--border);
+      background:rgba(255,255,255,.02);
+      border-radius:var(--radius);
+      padding:12px 12px;
+    }
+    .callout b{display:block;margin-bottom:6px}
+    .callout small{color:var(--muted)}
+    .bar{
+      height:1px;background:var(--border);margin:16px 0;
+    }
+    .badge{
+      display:inline-flex;align-items:center;gap:8px;
+      border:1px solid var(--border);
+      background:rgba(255,255,255,.02);
+      border-radius:999px;
+      padding:6px 10px;
+      font-size:12.5px;
+      color:rgba(231,238,247,.9);
+      margin:6px 6px 0 0;
+    }
+    .badge .dot{background:var(--accent2)}
+    .warn .dot{background:var(--warn)}
+    .danger .dot{background:var(--danger)}
+    .mono{
+      font-family:var(--mono);
+      font-size:12.5px;
+      color:rgba(231,238,247,.88);
+      background:rgba(255,255,255,.02);
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      padding:12px;
+      overflow:auto;
+    }
+    .step{
+      border:1px solid var(--border);
+      border-radius:var(--radius2);
+      padding:14px 14px;
+      background:rgba(255,255,255,.02);
+      margin:10px 0;
+    }
+    .step header{
+      display:flex;align-items:flex-start;justify-content:space-between;gap:12px;flex-wrap:wrap
+    }
+    .step header b{font-size:14px}
+    .step header span{
+      font-family:var(--mono);
+      font-size:12px;
+      color:var(--muted);
+      border:1px solid var(--border);
+      background:rgba(255,255,255,.02);
+      border-radius:999px;
+      padding:5px 9px;
+      white-space:nowrap;
+    }
+    .rules{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:10px;
+      margin-top:10px;
+    }
+    @media (max-width: 980px){.rules{grid-template-columns:1fr}}
+    .rule{
+      border:1px solid var(--border);
+      border-radius:var(--radius);
+      background:rgba(255,255,255,.015);
+      padding:10px 12px;
+    }
+    .rule b{display:flex;align-items:center;gap:8px}
+    .rule b i{
+      width:10px;height:10px;border-radius:99px;background:var(--accent);
+      display:inline-block;
+    }
+    .rule small{display:block;color:var(--muted);margin-top:6px}
+    .footer{
+      margin-top:18px;
+      color:var(--muted);
+      font-size:12.5px;
+      text-align:center;
+    }
+    .footer a{color:var(--muted);text-decoration:none;border-bottom:1px dotted rgba(155,176,199,.35)}
+    .footer a:hover{color:rgba(231,238,247,.9)}
+    .print-hint{display:none}
+    @media print{
+      body{background:#fff;color:#000}
+      .topbar,.toc,.footer{display:none}
+      .grid{grid-template-columns:1fr}
+      .card{box-shadow:none;border-color:#ddd}
+      .print-hint{display:block;color:#444;margin:0 0 8px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="topbar">
+      <div class="brand">
+        <div class="mark">SC</div>
+        <div>
+          <h1>Social Cali of San Jose — AIO & Local Authority SOP</h1>
+          <p>Controlled publishing system for durable AI Search signals (AIO · GEO · AEO · Local SEO)</p>
+        </div>
+      </div>
+      <div class="meta">
+        <div class="pill"><span class="dot"></span><span>Enterprise SOP</span></div>
+        <div class="pill"><span class="dot" style="background:var(--accent2)"></span><span>VA-Safe / Repeatable</span></div>
+        <div class="pill"><span class="dot" style="background:var(--warn)"></span><span>Truth & Trust First</span></div>
+      </div>
+    </div>
+
+    <div class="grid">
+      <!-- LEFT: TOC -->
+      <aside class="card toc" aria-label="Table of contents">
+        <div class="hd">
+          <h2>Index</h2>
+          <span class="kbd">index.html</span>
+        </div>
+        <div class="bd">
+          <div class="label">Foundation</div>
+          <a href="#purpose">Purpose</a>
+          <a href="#philosophy">Core Philosophy</a>
+          <a href="#roles">Roles & Permissions</a>
+
+          <div class="label">Execution</div>
+          <a href="#part0">Part 0 — Entity Foundation</a>
+          <a href="#part1">Part 1 — Daily Workstation Setup</a>
+          <a href="#part2">Part 2 — Daily Execution Loop (M–F)</a>
+          <a href="#part3">Part 3 — Weekly Safety & Audit</a>
+          <a href="#part4">Part 4 — Structured Data Policy</a>
+          <a href="#part5">Part 5 — Validation Source Rules</a>
+          <a href="#part6">Part 6 — Global Red Lights</a>
+          <a href="#part7">Part 7 — Prompt Library Rule</a>
+
+          <div class="group">
+            <div class="label">Quick references</div>
+            <a href="#qa-tier0">Tier 0 QA Checklist</a>
+            <a href="#qa-tier1">Tier 1 QA Checklist</a>
+            <a href="#logging">Daily Logging</a>
+          </div>
+        </div>
+      </aside>
+
+      <!-- RIGHT: CONTENT -->
+      <main class="card content" role="main">
+        <div class="hd">
+          <h2>Canonical SOP (Human-Readable)</h2>
+          <div>
+            <span class="badge"><span class="dot"></span>Clean entity signals</span>
+            <span class="badge warn"><span class="dot"></span>Stop on missing input</span>
+            <span class="badge danger"><span class="dot"></span>Red-light kill switch</span>
+          </div>
+        </div>
+
+        <div class="bd">
+          <p class="print-hint">Print view: Social Cali of San Jose — AIO & Local Authority SOP</p>
+
+          <section id="purpose">
+            <h2>Purpose</h2>
+            <p>
+              Build durable AI Search, AIO, GEO, AEO, and Local SEO authority for Social Cali of San Jose using a controlled,
+              scalable publishing system that prioritizes truth, trust, and clean entity signals. This SOP is designed to be
+              VA-safe, repeatable, and resistant to index failure, hallucinations, and entity pollution.
+            </p>
+
+            <div class="callouts">
+              <div class="callout">
+                <b>Primary objective</b>
+                <small>Publish verifiable, neutral standards content that sustains long-term authority and supports AI-mediated search surfaces.</small>
+              </div>
+              <div class="callout">
+                <b>System property</b>
+                <small>One Topic → One Asset Pair (Tier 0 + Tier 1) with strict link and validation controls.</small>
+              </div>
+            </div>
+          </section>
+
+          <div class="bar"></div>
+
+          <section id="philosophy">
+            <h2>Core Philosophy (Non-Negotiable)</h2>
+            <div class="rules">
+              <div class="rule"><b><i></i> Accuracy &gt; Speed</b><small>If unsure, stop. Do not guess.</small></div>
+              <div class="rule"><b><i></i> One Topic = One Asset Pair</b><small>Tier 0 and Tier 1 must always match.</small></div>
+              <div class="rule"><b><i></i> No Guessing, No Invention</b><small>Missing input = error.</small></div>
+              <div class="rule"><b><i></i> Trust First, Then Scale</b><small>Tier 0/Tier 1 must be clean before Tier 2 or volume.</small></div>
+              <div class="rule"><b><i></i> Entity Separation Matters</b><small>GitHub ≠ Money Site ≠ Google Site.</small></div>
+            </div>
+          </section>
+
+          <div class="bar"></div>
+
+          <section id="roles">
+            <h2>Roles &amp; Permissions</h2>
+            <h3>Trust Engineer / VA (This SOP)</h3>
+            <ul>
+              <li><b>Primary focus:</b> Tier 0, Tier 1, GitHub hygiene</li>
+              <li><b>Systems:</b> GitHub Pages (publish only), Google Sites, indexing tools</li>
+              <li><b>Forbidden:</b> RB Agent, RSI, bulk posting tools</li>
+            </ul>
+          </section>
+
+          <div class="bar"></div>
+
+          <section id="part0">
+            <h2>Part 0 — Entity Foundation (GitHub README)</h2>
+            <p><b>Purpose:</b> Define the scope, intent, and legitimacy of Social Cali’s GitHub authority layer.</p>
+            <p><b>Frequency:</b> One-time setup; quarterly review; event-based updates only (major service change).</p>
+
+            <h3>Rules</h3>
+            <ul>
+              <li>No schema / JSON-LD</li>
+              <li>No phone numbers</li>
+              <li>No sales language</li>
+              <li>No guarantees</li>
+              <li>Max 2 outbound links (official site + optional Google Site hub)</li>
+            </ul>
+
+            <h3>Required README sections</h3>
+            <ul>
+              <li>Repository Overview</li>
+              <li>What This Repository Publishes</li>
+              <li>What This Repository Does Not Publish</li>
+              <li>How This Content Is Intended To Be Used</li>
+              <li>Source &amp; Validation Philosophy</li>
+              <li>About the Publisher</li>
+            </ul>
+
+            <p><b>Generation rule:</b> README content is generated using the Canonical README Prompt only.</p>
+          </section>
+
+          <div class="bar"></div>
+
+          <section id="part1">
+            <h2>Part 1 — Daily Workstation Setup</h2>
+            <p><b>Do not start work until all are open:</b></p>
+            <ul>
+              <li>Dedicated browser profile (Social Cali only)</li>
+              <li>GitHub repository (correct client)</li>
+              <li>Google Sites (correct site)</li>
+              <li>Manager Topic Pack for the day</li>
+              <li>Indexing tool</li>
+            </ul>
+            <p><b>Rule:</b> Never open two different clients in the same browser window.</p>
+          </section>
+
+          <div class="bar"></div>
+
+          <section id="part2">
+            <h2>Part 2 — Daily Execution Loop (M–F)</h2>
+            <p>This loop is identical every workday.</p>
+
+            <div class="step">
+              <header>
+                <b>Step 1 — Pre-Flight Check</b>
+                <span>10 min</span>
+              </header>
+              <p>Confirm Manager Topic Pack includes all required fields:</p>
+              <div class="mono" role="region" aria-label="Required topic pack fields">
+CLIENT_NAME
+TOPIC_NAME
+TOPIC_SLUG
+PUBLISH_DATE (YYYY-MM-DD)
+VALIDATION_SOURCE_URL (authoritative)
+MONEY_SITE_ALLOWED (YES/NO)
+MONEY_SITE_URL (if YES)
+GITHUB_BASE_URL
+              </div>
+              <p><b>Stop condition:</b> If any item is missing, stop and report.</p>
+            </div>
+
+            <div class="step">
+              <header>
+                <b>Step 2 — Tier 0: GitHub Service Standard</b>
+                <span>Daily</span>
+              </header>
+
+              <h3>Rotation schedule</h3>
+              <ul>
+                <li>Monday: Prompt A</li>
+                <li>Tuesday: Prompt B</li>
+                <li>Wednesday: Prompt C</li>
+                <li>Thursday: Prompt D</li>
+                <li>Friday: Prompt A</li>
+              </ul>
+
+              <h3>Construction rules</h3>
+              <ul>
+                <li><b>PAGE_URL</b> = GITHUB_BASE_URL + / + TOPIC_SLUG + .html</li>
+                <li><b>Output</b> = raw HTML only</li>
+                <li><b>Outbound links (body)</b> = exactly one link to the validation source</li>
+              </ul>
+
+              <h3 id="qa-tier0">Mandatory QA (all must pass)</h3>
+              <ul>
+                <li>Paragraph 1 starts exactly with: <span class="kbd">"[TOPIC_NAME] is defined as..."</span></li>
+                <li>Footer present: <span class="kbd">"Last updated: YYYY-MM-DD"</span></li>
+                <li>One JSON-LD script only</li>
+                <li><span class="kbd">@graph</span> contains WebPage + Article</li>
+                <li>IDs end with <span class="kbd">#webpage</span> and <span class="kbd">#entity</span></li>
+                <li>No invented stats, laws, or claims</li>
+              </ul>
+
+              <h3>Publish &amp; index</h3>
+              <ul>
+                <li>Upload file to GitHub Pages</li>
+                <li>Confirm live URL loads</li>
+                <li>Submit URL to indexer</li>
+              </ul>
+            </div>
+
+            <div class="step">
+              <header>
+                <b>Step 3 — Tier 1: Google Site Shield Page</b>
+                <span>25–40 min</span>
+              </header>
+
+              <h3>Rotation schedule</h3>
+              <p>Same A/B/C/D pattern as Tier 0.</p>
+
+              <h3>Link rules (text links only)</h3>
+              <ul>
+                <li>Link #1 → Tier 0 GitHub URL (required)</li>
+                <li>Link #2 → Money site (only if allowed)</li>
+                <li>Max total text links: 2</li>
+              </ul>
+
+              <h3 id="qa-tier1">Mandatory QA</h3>
+              <ul>
+                <li>Clear “Quick Answer” section</li>
+                <li>Plain-language headings</li>
+                <li>No hype or guarantees</li>
+                <li>No more than 2 text links</li>
+              </ul>
+
+              <h3>Publish &amp; index</h3>
+              <ul>
+                <li>Publish Google Site page</li>
+                <li>Submit URL to indexer</li>
+              </ul>
+            </div>
+
+            <div class="step" id="logging">
+              <header>
+                <b>Step 4 — Daily Logging</b>
+                <span>10 min</span>
+              </header>
+              <p>Log the following fields:</p>
+              <ul>
+                <li>Topic</li>
+                <li>Tier 0 URL</li>
+                <li>Tier 1 URL</li>
+                <li>Validation source</li>
+                <li>Indexed submitted (Y/N)</li>
+              </ul>
+            </div>
+          </section>
+
+          <div class="bar"></div>
+
+          <section id="part3">
+            <h2>Part 3 — Weekly Safety &amp; Audit (Friday)</h2>
+
+            <h3>A) Chain Check</h3>
+            <p>Click through:</p>
+            <ul>
+              <li>Tier 1 → Tier 0 → Validation Source</li>
+              <li>Fix any broken link immediately.</li>
+            </ul>
+
+            <h3>B) Kill Switch (Critical)</h3>
+            <p>Search Google:</p>
+            <div class="mono">site:[Tier 0 URL]</div>
+            <p>
+              If two consecutive Tier 0 pages are not indexed after 14 days:
+              <b>stop new Tier 0 production</b> and notify the manager.
+            </p>
+          </section>
+
+          <div class="bar"></div>
+
+          <section id="part4">
+            <h2>Part 4 — Structured Data Policy (Strict)</h2>
+
+            <h3>Money Site (sanjose.socialcali.com)</h3>
+            <p>Allowed structured data types:</p>
+            <ul>
+              <li>WebSite</li>
+              <li>Organization</li>
+              <li>ProfessionalService</li>
+              <li>WebPage</li>
+              <li>BreadcrumbList</li>
+            </ul>
+
+            <h3>GitHub Tier 0 Pages</h3>
+            <p>Allowed:</p>
+            <ul>
+              <li>WebPage</li>
+              <li>Article / TechArticle</li>
+            </ul>
+            <p>Forbidden:</p>
+            <ul>
+              <li>LocalBusiness</li>
+              <li>ProfessionalService</li>
+              <li>Address / Geo / Phone</li>
+            </ul>
+
+            <h3>Google Site Tier 1 Pages</h3>
+            <p><b>No structured data of any kind.</b></p>
+
+            <h3>GitHub README</h3>
+            <p><b>No structured data of any kind.</b></p>
+          </section>
+
+          <div class="bar"></div>
+
+          <section id="part5">
+            <h2>Part 5 — Validation Source Rules</h2>
+
+            <h3>Preferred sources</h3>
+            <ul>
+              <li>Google Search Central</li>
+              <li>Google Ads Help</li>
+              <li>Meta Business Help</li>
+              <li>SBA.gov</li>
+              <li>SCORE.org</li>
+              <li>AMA.org</li>
+              <li>BBB.org</li>
+            </ul>
+
+            <h3>Forbidden sources</h3>
+            <ul>
+              <li>Opinion blogs</li>
+              <li>SEO-only blogs</li>
+              <li>Affiliate sites</li>
+              <li>Unverifiable stats pages</li>
+            </ul>
+
+            <p><b>Stop condition:</b> If no source is provided, stop and request one.</p>
+          </section>
+
+          <div class="bar"></div>
+
+          <section id="part6">
+            <h2>Part 6 — Global Red Lights (Stop Immediately)</h2>
+            <ul>
+              <li>AI invents a law, stat, or policy</li>
+              <li>Tier 0 links to a sales page</li>
+              <li>More than allowed links are published</li>
+              <li>Two clients opened in same browser</li>
+              <li>Two consecutive Tier 0 pages fail indexing</li>
+            </ul>
+          </section>
+
+          <div class="bar"></div>
+
+          <section id="part7">
+            <h2>Part 7 — Prompt Library (Mandatory — Full Page Generation)</h2>
+            <p>
+              All prompts are designed to generate full, long-form pages (not snippets). Each prompt must output a complete page
+              suitable for publishing.
+            </p>
+            <ul>
+              <li>VAs: only edit the input block</li>
+              <li>Never shorten outputs</li>
+              <li>Never summarize</li>
+              <li>Never remove required sections</li>
+            </ul>
+          </section>
+
+          <div class="bar"></div>
+
+          <section aria-label="Document notes">
+            <h2>Document Notes</h2>
+            <p>
+              This page is intended to serve as a human-readable, canonical index document for the SOP when hosted as
+              <span class="kbd">index.html</span> on GitHub Pages. The content is designed for clarity, auditability, and safe
+              delegation, without introducing sales language or operational ambiguity.
+            </p>
+          </section>
+
+          <div class="footer">
+            <span>Publisher: Social Cali of San Jose · Primary market: San Jose, California · Reference site: </span>
+            <a href="https://sanjose.socialcali.com/" rel="noopener">https://sanjose.socialcali.com/</a>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+</body>
+</html>
